@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rubén Palacio — Programador Junior</title>
+  <meta name="description" content="Portfolio de Rubén Palacio — Programador Junior en Zierzoware. Desarrollo web, front-end, apps móviles e IA. Zaragoza, España.">
+  <meta name="theme-color" content="#0b0c0e">
+  <meta property="og:title" content="Rubén Palacio — Programador Junior">
+  <meta property="og:description" content="Desarrollo web, front-end, apps móviles e IA. Zaragoza, España.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rpalax11.github.io/web/">
+  <meta property="og:image" content="https://rpalax11.github.io/web/img/Perfil.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://rpalax11.github.io/web/">
+
+  <link rel="icon" type="image/png" href="img/Perfil.png">
+  <link rel="apple-touch-icon" href="img/Perfil.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+
+  <script>
+    // Aplica el tema antes de pintar para evitar parpadeo
+    try {
+      const t = localStorage.getItem('theme');
+      if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <a href="#top" class="nav-logo" aria-label="Inicio">
+      <span class="logo-mark">RP</span>
+      <span class="logo-text">rubén<span class="dim">.palacio</span></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#formacion">Formación</a>
+      <a href="#stack">Stack</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="cmdk-trigger" type="button" aria-label="Abrir paleta de comandos">
+        <i class="fas fa-magnifying-glass"></i>
+        <span>Buscar</span>
+        <kbd>⌘K</kbd>
+      </button>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Cambiar tema">
+        <i class="fas fa-moon"></i>
+      </button>
+      <a href="#contacto" class="btn btn-accent btn-sm nav-cta">Contacto</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú móvil -->
+  <div class="mobile-menu" hidden>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#formacion">Formación</a>
+    <a href="#stack">Stack</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="grid-lines"></div>
+      </div>
+
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="status reveal">
+            <span class="pulse"></span>
+            Programador Junior en <strong>Zierzoware</strong>
+          </p>
+
+          <h1 class="hero-title reveal">
+            <span class="line">Rubén</span>
+            <span class="line">Palacio<span class="accent-dot">.</span></span>
+          </h1>
+
+          <p class="hero-lead reveal">
+            Creo software <em>útil</em>, escalable y <em>elegante</em>: webs, front-end,
+            apps móviles y desarrollo impulsado por IA. Graduado en DAM y
+            medalla de bronce en AragonSkills 2025.
+          </p>
+
+          <div class="hero-cta reveal">
+            <a href="#proyectos" class="btn btn-accent magnetic">
+              Ver proyectos <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="CV_Ruben_Palacio.pdf" class="btn btn-ghost magnetic" download>
+              <i class="fas fa-download"></i> Descargar CV
+            </a>
+          </div>
+
+          <ul class="hero-meta reveal">
+            <li><i class="fas fa-location-dot"></i> Zaragoza, España</li>
+            <li><i class="fas fa-clock"></i> <span data-clock>--:--</span> hora local</li>
+            <li><i class="fas fa-car"></i> Carnet B + vehículo</li>
+          </ul>
+        </div>
+
+        <!-- Tarjeta identificativa con efecto 3D -->
+        <div class="badge-stage reveal">
+          <div class="lanyard" aria-hidden="true"></div>
+          <div class="badge" data-tilt>
+            <div class="badge-shine" aria-hidden="true"></div>
+            <div class="badge-top">
+              <span class="badge-slot" aria-hidden="true"></span>
+              <span class="badge-label">DEV PASS · 2026</span>
+            </div>
+            <div class="badge-photo">
+              <img src="img/Perfil.png" alt="Retrato de Rubén Palacio" width="712" height="872">
+            </div>
+            <div class="badge-body">
+              <p class="badge-name">Rubén Palacio Sisamón</p>
+              <p class="badge-role">Programador Junior</p>
+              <dl class="badge-grid">
+                <div><dt>Base</dt><dd>Zaragoza</dd></div>
+                <div><dt>Título</dt><dd>DAM</dd></div>
+                <div><dt>Foco</dt><dd>Web + IA</dd></div>
+                <div><dt>Estado</dt><dd class="ok">● Activo</dd></div>
+              </dl>
+              <div class="barcode" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#sobre-mi" class="scroll-cue" aria-label="Bajar a Sobre mí">
+        <span>scroll</span>
+        <i class="fas fa-arrow-down"></i>
+      </a>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee" aria-label="Tecnologías">
+      <div class="marquee-track">
+        <span>Java</span><span>C#</span><span>JavaScript</span><span>Node.js</span><span>HTML</span><span>CSS</span><span>SQL</span><span>Python</span><span>Flutter</span><span>Dart</span><span>MySQL</span><span>WordPress</span><span>Drupal</span><span>Git</span><span>IA</span>
+        <span aria-hidden="true">Java</span><span aria-hidden="true">C#</span><span aria-hidden="true">JavaScript</span><span aria-hidden="true">Node.js</span><span aria-hidden="true">HTML</span><span aria-hidden="true">CSS</span><span aria-hidden="true">SQL</span><span aria-hidden="true">Python</span><span aria-hidden="true">Flutter</span><span aria-hidden="true">Dart</span><span aria-hidden="true">MySQL</span><span aria-hidden="true">WordPress</span><span aria-hidden="true">Drupal</span><span aria-hidden="true">Git</span><span aria-hidden="true">IA</span>
+      </div>
+    </div>
+
+    <!-- ===== SOBRE MÍ (BENTO) ===== -->
+    <section id="sobre-mi" class="section wrap">
+      <header class="section-head reveal">
+        <span class="kicker">01 — Sobre mí</span>
+        <h2>Código con <em>cabeza</em> de entrenador.</h2>
+      </header>
+
+      <div class="bento">
+        <article class="tile tile-bio reveal spot">
+          <p class="big">
+            Soy graduado en <strong>Desarrollo de Aplicaciones Multiplataforma</strong> y trabajo como
+            <strong>Programador Junior en Zierzoware</strong>, centrado en soluciones web, front-end
+            y tecnologías con Inteligencia Artificial.
+          </p>
+          <p>
+            Como entrenador de baloncesto he aprendido a liderar, comunicar y resolver problemas
+            bajo presión: habilidades que llevo a cada equipo de desarrollo en el que trabajo.
+          </p>
+        </article>
+
+        <article class="tile tile-medal reveal spot">
+          <div class="medal" aria-hidden="true"><span>3º</span></div>
+          <p class="tile-label">AragonSkills 2025</p>
+          <p class="tile-title">Bronce en Desarrollo Web</p>
+        </article>
+
+        <article class="tile tile-stat reveal spot">
+          <p class="stat"><span data-count="5">5</span></p>
+          <p class="tile-label">Proyectos publicados</p>
+          <p class="tile-sub">Webs, PWA y apps móviles</p>
+        </article>
+
+        <article class="tile tile-clock reveal spot">
+          <p class="tile-label"><i class="fas fa-location-dot"></i> Zaragoza, ES</p>
+          <p class="clock" data-clock>--:--</p>
+          <p class="tile-sub">Disponible para desplazarme por la provincia y alrededores</p>
+        </article>
+
+        <article class="tile tile-coach reveal spot">
+          <i class="fas fa-basketball tile-icon"></i>
+          <p class="tile-title">Entrenador F.A.B.</p>
+          <p class="tile-sub">Casademont Zaragoza Cantera y Dominicos · desde 2023</p>
+        </article>
+
+        <article class="tile tile-soft reveal spot">
+          <p class="tile-label">Soft skills</p>
+          <ul class="chips">
+            <li>Comunicación</li>
+            <li>Trabajo en equipo</li>
+            <li>Pensamiento analítico</li>
+            <li>Aprendizaje rápido</li>
+            <li>Adaptabilidad</li>
+            <li>Orientación a resultados</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCIA ===== -->
+    <section id="experiencia" class="section wrap">
+      <header class="section-head reveal">
+        <span class="kicker">02 — Experiencia</span>
+        <h2>Dónde he <em>aprendido</em> haciendo.</h2>
+      </header>
+
+      <ol class="timeline">
+        <li class="job reveal">
+          <div class="job-when">
+            <span class="now">Ahora</span>
+            <time>Jun 2026 — Actualidad</time>
+          </div>
+          <div class="job-card spot">
+            <div class="job-head">
+              <h3>Programador Junior</h3>
+              <span class="job-org">Zierzoware</span>
+            </div>
+            <ul>
+              <li>Desarrollo front-end y soluciones web.</li>
+              <li>Gestión de bases de datos relacionales con MySQL y phpMyAdmin.</li>
+              <li>Desarrollo impulsado por IA y uso de herramientas avanzadas.</li>
+              <li>Control de versiones con Git y trabajo en equipo.</li>
+            </ul>
+            <ul class="tags"><li>Front-end</li><li>MySQL</li><li>IA</li><li>Git</li></ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job-when"><time>Oct 2025 — Ene 2026</time></div>
+          <div class="job-card spot">
+            <div class="job-head">
+              <h3>Desarrollador Full-Stack Junior</h3>
+              <span class="job-org">EvelB</span>
+            </div>
+            <ul>
+              <li>Mantenimiento y desarrollo de aplicaciones y sitios web.</li>
+              <li>Gestión de contenidos con WordPress y Drupal.</li>
+              <li>Optimización y refactorización de código.</li>
+              <li>Formularios, componentes interactivos e interfaces responsive y accesibles.</li>
+              <li>Colaboración en apps móviles para iOS y Android.</li>
+            </ul>
+            <ul class="tags"><li>WordPress</li><li>Drupal</li><li>Responsive</li><li>iOS / Android</li></ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job-when"><time>Mar 2025 — Jun 2025</time></div>
+          <div class="job-card spot">
+            <div class="job-head">
+              <h3>Desarrollador de Aplicaciones <span class="muted">(Prácticas)</span></h3>
+              <span class="job-org">Técnicas Radiofísicas S.L.U.</span>
+            </div>
+            <ul>
+              <li>Desarrollo de aplicaciones internas en Java.</li>
+              <li>Consultas y administración de registros con SQL.</li>
+              <li>Herramientas web con HTML, CSS, JavaScript y Node.js.</li>
+            </ul>
+            <ul class="tags"><li>Java</li><li>SQL</li><li>Node.js</li></ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job-when">
+            <span class="now">Ahora</span>
+            <time>Ago 2023 — Actualidad</time>
+          </div>
+          <div class="job-card spot">
+            <div class="job-head">
+              <h3>Entrenador de Baloncesto</h3>
+              <span class="job-org">Federación Aragonesa de Baloncesto</span>
+            </div>
+            <ul>
+              <li>Gestión y dirección de equipos deportivos.</li>
+              <li>Liderazgo, comunicación y resolución de problemas.</li>
+              <li>Clubs: Casademont Zaragoza Cantera y Dominicos.</li>
+            </ul>
+            <ul class="tags"><li>Liderazgo</li><li>Comunicación</li></ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job-when"><time>Mar 2023 — Jun 2023</time></div>
+          <div class="job-card spot">
+            <div class="job-head">
+              <h3>Técnico de Soporte Informático <span class="muted">(Prácticas)</span></h3>
+              <span class="job-org">Asseco Spain</span>
+            </div>
+            <ul>
+              <li>Gestión de incidencias técnicas.</li>
+              <li>Administración de dispositivos iOS mediante MDM.</li>
+              <li>Instalación y verificación de sistemas informáticos.</li>
+            </ul>
+            <ul class="tags"><li>Soporte</li><li>MDM</li><li>Sistemas</li></ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section id="proyectos" class="section wrap">
+      <header class="section-head reveal">
+        <span class="kicker">03 — Proyectos</span>
+        <h2>Cosas que he <em>lanzado</em>.</h2>
+      </header>
+
+      <div class="filters reveal" role="group" aria-label="Filtrar proyectos">
+        <button class="filter is-active" data-filter="all" aria-pressed="true">Todos <span>5</span></button>
+        <button class="filter" data-filter="web" aria-pressed="false">Web <span>4</span></button>
+        <button class="filter" data-filter="mobile" aria-pressed="false">Móvil <span>2</span></button>
+      </div>
+
+      <div class="projects">
+
+        <article class="project reveal" data-cat="web mobile">
+          <div class="project-media spot">
+            <div class="media-logo">
+              <img src="img/favicon.png" alt="Logotipo de GestionaTeam" loading="lazy" class="app-icon">
+            </div>
+            <span class="media-chip">PWA · Android · iOS</span>
+          </div>
+          <div class="project-info">
+            <span class="project-num">01</span>
+            <h3>GestionaTeam</h3>
+            <p>PWA para gestionar equipos deportivos mediante encuestas y estadísticas, disponible también como app para Android e iOS.</p>
+            <ul class="tags"><li>PWA</li><li>Flutter</li><li>Dart</li><li>JavaScript</li></ul>
+            <div class="project-links">
+              <a href="https://gestionateam.web.app/" target="_blank" rel="noopener" class="link-arrow">Visitar app <i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal" data-cat="web">
+          <div class="project-media spot">
+            <div class="media-stack" data-gallery="tapiceria">
+              <img src="img/Tapiceria1.webp" alt="Tapicerías Deluxe: taller trabajando un cabecero capitoné" loading="lazy" data-full="img/Tapiceria1.jpg">
+              <img src="img/Tapiceria2.webp" alt="Tapicerías Deluxe: trabajo de tapizado 2" loading="lazy" data-full="img/Tapiceria2.jpg">
+              <img src="img/Tapiceria3.webp" alt="Tapicerías Deluxe: trabajo de tapizado 3" loading="lazy" data-full="img/Tapiceria3.jpg">
+              <img src="img/Tapiceria4.webp" alt="Tapicerías Deluxe: trabajo de tapizado 4" loading="lazy" data-full="img/Tapiceria4.jpg">
+            </div>
+            <span class="media-chip">Web + SEO</span>
+            <button class="media-open" type="button" data-open="tapiceria"><i class="fas fa-expand"></i> Galería</button>
+          </div>
+          <div class="project-info">
+            <span class="project-num">02</span>
+            <h3>Tapicerías Deluxe</h3>
+            <p>Web profesional optimizada para SEO y posicionamiento, con diseño responsive y gestión de Instagram para dar visibilidad a sus servicios.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>SEO</li></ul>
+            <div class="project-links">
+              <a href="https://tapiceriasdeluxe.com/" target="_blank" rel="noopener" class="link-arrow">Visitar sitio <i class="fas fa-arrow-up-right-from-square"></i></a>
+              <a href="https://www.instagram.com/deluxetapicerias/" target="_blank" rel="noopener" class="link-arrow">Instagram <i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal" data-cat="web">
+          <div class="project-media spot media-light">
+            <div class="media-logo wide">
+              <img src="img/termaebro1.png" alt="Logotipo de TermaEbro" loading="lazy">
+            </div>
+            <span class="media-chip">Web corporativa</span>
+          </div>
+          <div class="project-info">
+            <span class="project-num">03</span>
+            <h3>TermaEbro</h3>
+            <p>Web profesional para TermaEbro, con diseño moderno y responsive orientado a presentar sus servicios de climatización, electricidad y fontanería.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="project-links">
+              <a href="https://termaebro.com" target="_blank" rel="noopener" class="link-arrow">Visitar sitio <i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal" data-cat="web">
+          <div class="project-media spot">
+            <div class="media-stack" data-gallery="dominicos">
+              <img src="img/Web1.png" alt="DominicosWeb: vista principal" loading="lazy">
+              <img src="img/Web2.png" alt="DominicosWeb: página de servicios" loading="lazy">
+              <img src="img/Web3.png" alt="DominicosWeb: panel de administración" loading="lazy">
+              <img src="img/Web4.png" alt="DominicosWeb: diseño responsive" loading="lazy">
+            </div>
+            <span class="media-chip">Web</span>
+            <button class="media-open" type="button" data-open="dominicos"><i class="fas fa-expand"></i> Galería</button>
+          </div>
+          <div class="project-info">
+            <span class="project-num">04</span>
+            <h3>DominicosWeb</h3>
+            <p>Portal web para gestionar y visualizar la información del colegio Dominicos Zaragoza.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>JSP</li></ul>
+            <div class="project-links">
+              <a href="https://github.com/RubenPalSis/DominicosWeb/tree/master" target="_blank" rel="noopener" class="link-arrow">Código en GitHub <i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal" data-cat="mobile">
+          <div class="project-media spot">
+            <div class="media-stack" data-gallery="android">
+              <img src="img/Android1.png" alt="App Gestor Deportivo: pantalla principal" loading="lazy">
+              <img src="img/Android2.png" alt="App Gestor Deportivo: código de la base de datos" loading="lazy">
+              <img src="img/Android3.png" alt="App Gestor Deportivo: estadísticas" loading="lazy">
+              <img src="img/Android4.png" alt="App Gestor Deportivo: perfil" loading="lazy">
+            </div>
+            <span class="media-chip">App Android</span>
+            <button class="media-open" type="button" data-open="android"><i class="fas fa-expand"></i> Galería</button>
+          </div>
+          <div class="project-info">
+            <span class="project-num">05</span>
+            <h3>Gestor Deportivo</h3>
+            <p>App Android para gestionar equipos de baloncesto: jugadores, equipos y estadísticas con base de datos local. Publicada en Google Play.</p>
+            <ul class="tags"><li>Java</li><li>Android</li><li>SQLite</li></ul>
+            <div class="project-links">
+              <a href="https://play.google.com/store/apps/details?id=com.appStatsBaloncestoRuben.basketapp" target="_blank" rel="noopener" class="link-arrow">Google Play <i class="fab fa-google-play"></i></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== FORMACIÓN & LOGROS ===== -->
+    <section id="formacion" class="section wrap">
+      <header class="section-head reveal">
+        <span class="kicker">04 — Formación &amp; logros</span>
+        <h2>Siempre <em>aprendiendo</em>.</h2>
+      </header>
+
+      <div class="edu-layout">
+        <div class="edu-col">
+          <h3 class="col-title">Estudios</h3>
+          <ul class="edu-list">
+            <li class="edu reveal">
+              <span class="edu-year">2023 — 2025</span>
+              <div>
+                <p class="edu-name">Grado Superior · Desarrollo de Aplicaciones Multiplataforma</p>
+                <p class="edu-place">La Salle Santo Ángel, Zaragoza</p>
+              </div>
+            </li>
+            <li class="edu reveal">
+              <span class="edu-year">2023</span>
+              <div>
+                <p class="edu-name">Curso de Entrenador · Nivel 1</p>
+                <p class="edu-place">Federación Aragonesa de Baloncesto</p>
+              </div>
+            </li>
+            <li class="edu reveal">
+              <span class="edu-year">2021 — 2023</span>
+              <div>
+                <p class="edu-name">Grado Medio · Sistemas Microinformáticos y Redes</p>
+                <p class="edu-place">Salesianos Ntra. Sra. del Pilar</p>
+              </div>
+            </li>
+          </ul>
+
+          <h3 class="col-title">Cursos y certificaciones</h3>
+          <ul class="certs">
+            <li class="reveal"><a href="img/PR_DesarrolloIA.jpg" target="_blank" rel="noopener" class="cert spot">
+              <span class="cert-name">Iniciación al desarrollo con IA</span><span class="cert-org">BIG school</span><i class="fas fa-arrow-up-right"></i>
+            </a></li>
+            <li class="reveal"><a href="img/PR_Ciberseguridad.pdf" target="_blank" rel="noopener" class="cert spot">
+              <span class="cert-name">Ciberseguridad y Hacking Ético</span><span class="cert-org">BIG school</span><i class="fas fa-arrow-up-right"></i>
+            </a></li>
+            <li class="reveal"><a href="img/PR_Excel.pdf" target="_blank" rel="noopener" class="cert spot">
+              <span class="cert-name">Excel</span><span class="cert-org">Santander Open Academy</span><i class="fas fa-arrow-up-right"></i>
+            </a></li>
+            <li class="reveal"><a href="img/PR_Certificacion3D.pdf" target="_blank" rel="noopener" class="cert spot">
+              <span class="cert-name">Iniciación a la impresión 3D</span><span class="cert-org">Salesianos · INAEM · 2022</span><i class="fas fa-arrow-up-right"></i>
+            </a></li>
+          </ul>
+        </div>
+
+        <div class="edu-col">
+          <h3 class="col-title">Reconocimientos</h3>
+
+          <article class="award award-hero reveal spot">
+            <div class="award-img">
+              <img src="img/aragonskills.jpeg" alt="Rubén con la medalla de bronce y el diploma de AragonSkills 2025" loading="lazy">
+              <span class="award-badge"><i class="fas fa-medal"></i> 3er puesto</span>
+            </div>
+            <div class="award-body">
+              <span class="award-date">Mayo 2025</span>
+              <h4>AragonSkills 2025 · Desarrollo Web</h4>
+              <p>Campeonato autonómico de Formación Profesional. Pruebas prácticas contra estudiantes de todo Aragón que evalúan nivel técnico, resolución de problemas y trabajo bajo presión.</p>
+              <a href="img/Palacio_Ruben_CertificacionAS.pdf" target="_blank" rel="noopener" class="link-arrow">Ver certificado <i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+
+          <article class="award reveal spot">
+            <div class="award-body">
+              <span class="award-date">Enero 2026</span>
+              <h4><i class="fas fa-envelope-open-text"></i> Carta de recomendación · Ayto. de Zaragoza</h4>
+              <p>Reconocimiento institucional por mi dedicación y calidad de trabajo en un proyecto hecho en colaboración con el Ayuntamiento.</p>
+              <a href="img/CartaRecomendacion_redacted.pdf" target="_blank" rel="noopener" class="link-arrow">Ver carta <i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STACK ===== -->
+    <section id="stack" class="section wrap">
+      <header class="section-head reveal">
+        <span class="kicker">05 — Stack</span>
+        <h2>Mis <em>herramientas</em>.</h2>
+      </header>
+
+      <div class="stack-grid">
+        <div class="stack-group reveal spot">
+          <p class="stack-title"><span>01</span> Lenguajes</p>
+          <ul class="chips lg"><li>Java</li><li>C#</li><li>SQL</li><li>Python</li><li>Dart</li><li>JavaScript</li></ul>
+        </div>
+        <div class="stack-group reveal spot">
+          <p class="stack-title"><span>02</span> Web &amp; móvil</p>
+          <ul class="chips lg"><li>HTML</li><li>CSS</li><li>Node.js</li><li>Flutter</li><li>PWA</li><li>Android</li></ul>
+        </div>
+        <div class="stack-group reveal spot">
+          <p class="stack-title"><span>03</span> Datos</p>
+          <ul class="chips lg"><li>MySQL</li><li>SQL Server</li><li>SQLite</li><li>NoSQL</li><li>phpMyAdmin</li></ul>
+        </div>
+        <div class="stack-group reveal spot">
+          <p class="stack-title"><span>04</span> CMS &amp; flujo</p>
+          <ul class="chips lg"><li>WordPress</li><li>Drupal</li><li>Git</li><li>Metodologías ágiles</li><li>Excel avanzado</li><li>Herramientas de IA</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="contact">
+      <div class="wrap">
+        <span class="kicker reveal">06 — Contacto</span>
+        <h2 class="contact-title reveal">¿Construimos<br>algo <em>juntos</em>?</h2>
+
+        <div class="contact-actions reveal">
+          <a href="mailto:rubenpalsis11@gmail.com" class="mail-big magnetic">
+            rubenpalsis11@gmail.com <i class="fas fa-arrow-right"></i>
+          </a>
+          <button class="btn btn-ghost copy-mail" type="button" data-copy="rubenpalsis11@gmail.com">
+            <i class="far fa-copy"></i> <span>Copiar email</span>
+          </button>
+        </div>
+
+        <ul class="contact-links reveal">
+          <li><a href="tel:+34615906268"><i class="fas fa-phone"></i> +34 615 90 62 68</a></li>
+          <li><a href="https://linkedin.com/in/ruben-palacio-sisamon-4bb30425a" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/RubenPalSis" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></li>
+          <li><a href="CV_Ruben_Palacio.pdf" download><i class="fas fa-file-arrow-down"></i> CV en PDF</a></li>
+        </ul>
+      </div>
+
+      <footer class="footer wrap">
+        <p>© <span id="year"></span> Rubén Palacio Sisamón</p>
+        <p class="dim">Última actualización: 28/09/2026</p>
+        <p class="dim">Pulsa <kbd>⌘K</kbd> para navegar</p>
+      </footer>
+    </section>
+  </main>
+
+  <!-- ===== PALETA DE COMANDOS ===== -->
+  <div class="cmdk" role="dialog" aria-modal="true" aria-label="Paleta de comandos" hidden>
+    <div class="cmdk-backdrop" data-close></div>
+    <div class="cmdk-panel">
+      <div class="cmdk-search">
+        <i class="fas fa-magnifying-glass"></i>
+        <input type="text" placeholder="¿A dónde quieres ir?" aria-label="Buscar comando" autocomplete="off" spellcheck="false">
+        <kbd>esc</kbd>
+      </div>
+      <ul class="cmdk-list" role="listbox"></ul>
+      <div class="cmdk-foot"><span><kbd>↑</kbd><kbd>↓</kbd> navegar</span><span><kbd>↵</kbd> abrir</span></div>
+    </div>
+  </div>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Galería de imágenes" hidden>
+    <button class="lb-close icon-btn" type="button" aria-label="Cerrar"><i class="fas fa-xmark"></i></button>
+    <button class="lb-prev icon-btn" type="button" aria-label="Imagen anterior"><i class="fas fa-chevron-left"></i></button>
+    <figure>
+      <img alt="">
+      <figcaption></figcaption>
+    </figure>
+    <button class="lb-next icon-btn" type="button" aria-label="Imagen siguiente"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
